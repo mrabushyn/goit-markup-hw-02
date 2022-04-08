@@ -1,17 +1,17 @@
-:root {
+/* :root {
     --main-color: #757575;
     --secondary-color: #252525;
-}
+} */
 
-body {
+/* body {
     /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
     color: var(--main-color);
-}
-.header {
+} */ 
+/* .header {
     border-bottom: 1px solid #ECECEC;;
 }
 .container {
@@ -20,21 +20,21 @@ body {
     border: 1px solid red;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 /* .menu {
 }
 .menu-item {
 } */
-.menu-link {color: #252525;
-}
+/* .menu-link {color: #252525;
+} */
 /* .contacts {
 }
 .contacts-item {
 } */
-.contacts-link {
+/* .contacts-link {
     /* font-style: normal ; */
-    color: #252525;
-}
+    /* color: #252525; */
+/* } */ 
 /* .main-conteiner {
 }
 .hero {
@@ -43,17 +43,22 @@ body {
 }
 .hero-btn {
 } */
-.hidden-h2 {
+/* .hidden-h2 {
     visibility: hidden;
     width: 1px;
     height: 1px;
     margin-bottom: -1px;
-}
+} */
 /* .footer {
 } */
-.hidden-h1 {
+/* .hidden-h1 {
     visibility: hidden;
     width: 1px;
     height: 1px;
     margin-bottom: -1px;
+} */
+
+body {
+    font-family: "roboto";
+    /* font-style: normal; */
 }
