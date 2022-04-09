@@ -68,7 +68,7 @@ body {
     color: var(--main-color);
 }
 
-ul {
+.lists {
     list-style: none;
 }
 
@@ -120,9 +120,9 @@ ul {
     color: #2196F3;
 }
 .hero-btn:hover,
-.hero-btn:hover {
-    background-color: #FFFFFF;
-    color: #757575;
+.hero-btn:focus {
+    background-color: #F5F4FA;
+    color: var(--main-color);
 }
 
 
@@ -183,7 +183,6 @@ ul {
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
-    
     letter-spacing: 0.03em;
     color: var(--secondary-color);
 }
@@ -194,8 +193,6 @@ ul {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-
-    color: var(--main-color);
 }
 
 .workers {
@@ -203,11 +200,9 @@ ul {
     font-size: 16px;
     line-height: 1.18;
     /* identical to box height */
-    
     text-align: center;
     letter-spacing: 0.03em;
-    
-    color: var(--main-color);
+
 }
 
 .proffesion {
@@ -215,10 +210,8 @@ ul {
     font-size: 16px;
     line-height: 1.18;
     /* identical to box height */
-    
     text-align: center;
     letter-spacing: 0.03em;
-    
     color: var(--secondary-color) ;
 }
 
@@ -249,4 +242,52 @@ ul {
 .footer-contacts-link:hover {
     color:  #FFFFFF;
     opacity: 100%;
+}
+
+.pf-hidden-h1 {
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    margin-bottom: -1px;
+}
+
+.portfolio-btn {
+width: 128px;
+height: 38px;
+left: 576px;
+top: 174px;
+background: #F5F4FA;
+border-radius: 4px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+/* identical to box height, or 162% */
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--main-color);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus  {
+    background:#2196F3;
+    color: #FFFFFF;
+}
+
+.pf-name1 {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+/* identical to box height, or 200% */
+letter-spacing: 0.06em;
+}
+
+.pf-name2 {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.875;
+/* identical to box height, or 188% */
+
+letter-spacing: 0.03em;
+
+color: var(--secondary-color);
 }
