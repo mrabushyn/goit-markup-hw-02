@@ -44,3 +44,23 @@ prettierrc.json
   *:: ::before {
     m0+p0
     }
+
+-----------------------------CSS------------------------------
+
+    /* body {
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--main-color);
+} */ 
+/* .header {
+    border-bottom: 1px solid #ECECEC;
+}
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;

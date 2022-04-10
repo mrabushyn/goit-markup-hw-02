@@ -1,63 +1,3 @@
-/* :root {
-    --main-color: #757575;
-    --secondary-color: #252525;
-} */
-
-/* body {
-    /* font-family: 'Raleway', sans-serif; */
-    /* font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    color: var(--main-color);
-} */ 
-/* .header {
-    border-bottom: 1px solid #ECECEC;
-}
-.container {
-    width: 1200px;
-    padding: 0 15px;
-    border: 1px solid red;
-    margin-left: auto;
-    margin-right: auto;
-} */
-/* .menu {
-}
-.menu-item {
-} */
-/* .menu-link {color: #252525;
-} */
-/* .contacts {
-}
-.contacts-item {
-} */
-/* .contacts-link {
-    /* font-style: normal ; */
-    /* color: #252525; */
-/* } */ 
-/* .main-conteiner {
-}
-.hero {
-}
-.hero-h1 {
-}
-.hero-btn {
-} */
-/* .hidden-h2 {
-    visibility: hidden;
-    width: 1px;
-    height: 1px;
-    margin-bottom: -1px;
-} */
-/* .footer {
-} */
-/* .hidden-h1 {
-    visibility: hidden;
-    width: 1px;
-    height: 1px;
-    margin-bottom: -1px;
-} */
-
 :root {
     --main-color: #212121;
     --secondary-color: #757575;
@@ -72,11 +12,25 @@ body {
     list-style: none;
 }
 
-.header-container {
-    text-align: center;
+.menu-link:hover,
+.contacts-link:hover,
+.menu-link:focus,
+.contacts-link:focus {
+    color: #2196F3;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #F5F4FA;
+    color: var(--main-color);
 }
 
 
+/* .header-container {
+    text-align: center;
+} */
+
+/* ----------------------------HEDER-------------------------------- */
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -119,23 +73,22 @@ body {
 .contacts-link:focus {
     color: #2196F3;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: #F5F4FA;
     color: var(--main-color);
 }
 
-
-
+/* <!-- ----------------------------------------HERO--------------------------------------- --> */
 .hero {
     background-color: #2F303A;
 }
 
-.hero-h1 {
+.hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
-    /* or 136% */
+    line-height: 1.36;    
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -151,25 +104,26 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #FFFFFF;
-
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    /* identical to box height, or 188% */
-
     display: block ;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
-.hidden-h2 {
+/* ----------------------------------------ABOUT---------------------------------- */
+
+.hidden-about-title {
     visibility: hidden;
     width: 1px;
     height: 1px;
     margin-bottom: -1px;
 }
-.second-section-list-h3 {
+
+.about-list-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -178,16 +132,16 @@ body {
     
 }
 
-.second-section-list-item {
-    font-weight: 400;
+.about-list-item {
     font-size: 14px;
     line-height: 1.71;
-    /* or 171% */
     letter-spacing: 0.03em;
     color: var(--secondary-color);
 }
 
-.name-section {
+/* -------------------------------------ABOUT-MORE------------------------------ */
+
+.united-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -195,26 +149,26 @@ body {
     letter-spacing: 0.03em;
 }
 
-.workers {
+/* ---------------------------------------MASTERS--------------------------------------------- */
+
+
+.masters-list {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
 
 }
 
 .proffesion {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color) ;
 }
-
+/* ----------------------------------------FOOTER---------------------------------------- */
 .footer-section {
     background: #2F303A;
 }
@@ -227,7 +181,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    /* or 171% */
     text-decoration-line: none;
     font-style: normal;
     letter-spacing: 0.03em;
@@ -239,12 +192,15 @@ body {
     opacity: 100%;
 }
 
-.footer-contacts-link:hover {
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
     color:  #FFFFFF;
     opacity: 100%;
 }
+/* -------------------------------------PORTFOLIO = PF---------------------------------- */
+/* ---------------------------------------PF BUTTONS-------------------------------------*/
 
-.pf-hidden-h1 {
+.pf-hidden-title {
     visibility: hidden;
     width: 1px;
     height: 1px;
@@ -252,19 +208,19 @@ body {
 }
 
 .portfolio-btn {
-width: 128px;
-height: 38px;
-left: 576px;
-top: 174px;
-background: #F5F4FA;
-border-radius: 4px;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-/* identical to box height, or 162% */
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--main-color);
+    width: 128px;
+    height: 38px;
+    left: 576px;
+    top: 174px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    cursor: pointer;
 }
 
 .portfolio-btn:hover,
@@ -272,22 +228,17 @@ color: var(--main-color);
     background:#2196F3;
     color: #FFFFFF;
 }
-
-.pf-name1 {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-/* identical to box height, or 200% */
-letter-spacing: 0.06em;
+/* -------------------------------------------WORKS------------------------------------------- */
+.pf-works-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 
-.pf-name2 {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.875;
-/* identical to box height, or 188% */
-
-letter-spacing: 0.03em;
-
-color: var(--secondary-color);
+.pf-works-kind {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
 }
