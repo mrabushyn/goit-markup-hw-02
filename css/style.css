@@ -1,11 +1,17 @@
 :root {
     --main-color: #212121;
     --secondary-color: #757575;
+    --brend-color: #2196F3;
+    --backgrd-color: #F5F4FA;
+    --light-color: #FFFFFF;
+    --brand-bg-color: #188CE8;
+
 }
 
 body {
-    font-family: "roboto", tahoma, sans-serif;
+    font-family: "Roboto", tahoma, sans-serif;
     color: var(--main-color);
+    font-size: 14px;
 }
 
 .lists {
@@ -16,15 +22,26 @@ body {
 .contacts-link:hover,
 .menu-link:focus,
 .contacts-link:focus {
-    color: #2196F3;
+    color: var(--brend-color);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #F5F4FA;
-    color: var(--main-color);
+    background-color: var(--brand-bg-color);
+    color: var(--light-color);
 }
 
+.portfolio-btn:hover,
+.portfolio-btn:focus  {
+    background:var(--brend-color);
+    color: var(--light-color);
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color:  var(--brend-color);
+    opacity: 100%;
+}
 
 /* .header-container {
     text-align: center;
@@ -32,13 +49,13 @@ body {
 
 /* ----------------------------HEDER-------------------------------- */
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.1923;
     /* identical to box height */
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--brend-color);
     text-decoration-line: none;
 }
 
@@ -48,7 +65,6 @@ body {
 
 .menu-link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-color);
@@ -57,27 +73,16 @@ body {
 
 
 .contacts-link {
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 500;    
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration-line: none;
     font-style: normal;
-    color: var(--secondary-color); 
+    color: var(--secondary-color);     
 }
 
-
-.menu-link:hover,
-.contacts-link:hover,
-.menu-link:focus,
-.contacts-link:focus {
-    color: #2196F3;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-    background-color: #F5F4FA;
-    color: var(--main-color);
+.current {
+    color: var(--brend-color);
 }
 
 /* <!-- ----------------------------------------HERO--------------------------------------- --> */
@@ -92,7 +97,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--light-color);
 }
 
 .hero-btn {
@@ -100,10 +105,10 @@ body {
     height: 50px;
     left: 700px;
     top: 430px;
-    background: #2196F3;
+    background: var(--brend-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--light-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -132,8 +137,7 @@ body {
     
 }
 
-.about-list-item {
-    font-size: 14px;
+.about-list-item {    
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
@@ -174,17 +178,16 @@ body {
 }
 
 .footer-logo-style {
-    color: #FFFFFF;
+    color: var(--light-color);
 }
 
 .footer-contacts-link {
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 400;    
     line-height: 1.71;
     text-decoration-line: none;
     font-style: normal;
     letter-spacing: 0.03em;
-    color:  #FFFFFF;
+    color:  var(--light-color);
     opacity: 60%;
 }
 
@@ -192,11 +195,7 @@ body {
     opacity: 100%;
 }
 
-.footer-contacts-link:hover,
-.footer-contacts-link:focus {
-    color:  #FFFFFF;
-    opacity: 100%;
-}
+
 /* -------------------------------------PORTFOLIO = PF---------------------------------- */
 /* ---------------------------------------PF BUTTONS-------------------------------------*/
 
@@ -208,11 +207,8 @@ body {
 }
 
 .portfolio-btn {
-    width: 128px;
-    height: 38px;
-    left: 576px;
-    top: 174px;
-    background: #F5F4FA;
+
+    background: var(--backgrd-color);
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
@@ -223,11 +219,6 @@ body {
     cursor: pointer;
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus  {
-    background:#2196F3;
-    color: #FFFFFF;
-}
 /* -------------------------------------------WORKS------------------------------------------- */
 .pf-works-name {
     font-weight: 700;
@@ -241,4 +232,8 @@ body {
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+}
+
+button.current {
+    background-color : var(--brend-color);
 }
