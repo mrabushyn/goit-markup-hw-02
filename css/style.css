@@ -236,4 +236,5 @@ body {
 
 button.current {
     background-color : var(--brend-color);
+    color: var(--light-color);
 }
